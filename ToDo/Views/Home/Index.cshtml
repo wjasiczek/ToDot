@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="row text-center">
+    <h1>ToDo List</h1>
+</div>
+
+<div class="row form-group">
+    <div class="col-lg-9">
+        <textarea id="ToDoArea" class="form-control" rows="5" placeholder="New Task..."></textarea>
+    </div>
+    <div class="col-lg-3">
+        <button id="AddToDoButton" class="btn btn-primary"><b>Add Task</b></button>
+    </div>
+</div>
+
+<div id="AddMessage" class="text-center" >placeholder</div>
+
+<table id="ToDos" class="table">
+</table>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/myscripts")
+}
+
